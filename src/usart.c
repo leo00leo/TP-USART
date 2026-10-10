@@ -18,7 +18,6 @@ void usart_init(USART_TypeDef * USARTx, uint32_t baudrate){
         GPIOA->CRL |=(0XB<<PA9*4);
         GPIOA->CRL&=~(0XF<<PA10*4);
         GPIOA->CRL |=(0XB<<PA10*4);
-        USART_BRR_DIV_Mantissa=0d27
         USART1->BRR=(PCLK/(16*baudrate));
         valor=(PCLK/(16*baudrate));
         USART1->CR1|=USART_CR1_UE;
