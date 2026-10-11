@@ -1,5 +1,5 @@
-#ifndef ADC_H
-#define ADC_H
+#ifndef USART_H
+#define USART_H
 #include "stm32f103xb.h"
 void usart_init(USART_TypeDef * USARTx, uint32_t baudrate);
 void usart_send_char(USART_TypeDef * USARTx, uint8_t data);

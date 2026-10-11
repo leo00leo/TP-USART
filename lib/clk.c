@@ -1,4 +1,5 @@
-#include "clk_maximizer.h"
+#include "clk.h"
+#include "usart.h"
 
 void clock_72MHz(void)
 {
