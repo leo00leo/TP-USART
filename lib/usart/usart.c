@@ -56,9 +56,9 @@ void usart_send_char(USART_TypeDef * USARTx, uint8_t data){
     while(!(USARTx->SR & USART_SR_TXE));
 }       
 uint8_t usart_receive_char(USART_TypeDef * USARTx){
-    char c;
     while(!(USARTx->SR & USART_SR_RXNE));
-    return c=USARTx->DR;
+    char c=USARTx->DR;
+    return;
 }
 void usart_send_string(USART_TypeDef *USARTx, char* txt){
     while(txt){
