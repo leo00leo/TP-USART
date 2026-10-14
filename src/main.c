@@ -5,6 +5,7 @@
 int main(void){
     clock_72MHz();
     usart_init(USART1, 115200);
+
     while(1){
         usart_send_char(1, 'a');
     }
