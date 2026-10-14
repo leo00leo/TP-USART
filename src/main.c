@@ -7,6 +7,6 @@ int main(void){
     usart_init(USART1, 9600);
 
     while(1){
-        usart_send_char(USART1, 'A');
+        usart_send_char(USART1, 'A')
     }
 }
