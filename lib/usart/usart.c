@@ -42,7 +42,7 @@ void usart_init(USART_TypeDef * USARTx, uint32_t baudrate){
         GPIOB->CRH&=~(0XF<<PB11*4);
         GPIOB->CRH |=(0XB<<PB11*4);
     }   
-    valor=(16*baudrate)/PCLK;
+    valor=PCLK/(16*baudrate);
     mantissa=(valor);
     fraction=(valor-mantissa)*100;
     USARTx->BRR=(mantissa<<4)|fraction;
