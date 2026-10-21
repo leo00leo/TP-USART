@@ -4,9 +4,7 @@
 
 int main(void){
     clock_72MHz();
-    usart_init(USART1, 115200);
+    usart_init(USART1, 9600);
 
-    while(1){
-        usart_send_char(1, 'a');
-    }
+    usart_send_string(USART1, "manon washed");
 }
